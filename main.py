@@ -11,7 +11,7 @@ class Window(pyglet.window.Window):
         self.G =100
         self.batch = Batch()
         self.planet = Planet(self.width//2, self.height//2, 100, 100, color=(255, 76, 148), batch=self.batch)
-        self.a1 = Spaceship(200, 400, 0, 2, 1, 10, visible=True, color=(50, 225, 30), batch=self.batch)
+        self.a1 = Spaceship(self.width//3, 400, 0, 2, 1, 10, visible=True, color=(50, 225, 30), batch=self.batch)
         self.spaceships = [self.a1]
         self.startMousex = 0
         self.startMousey = 0
